@@ -38,23 +38,26 @@
                 <label class="block text-sm font-medium text-purple-700 mb-1">Weight (kg)</label>
                 <input type="number" id="weight" class="w-full bg-white border border-purple-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="110">
             </div>
+            <div class="bg-purple-50 rounded-xl p-4">
+                <label class="block text-sm font-medium text-purple-700 mb-1">Age (ปี)</label>
+                <input type="number" id="age" class="w-full bg-white border border-purple-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="25">
+            </div>
+            <div class="bg-purple-50 rounded-xl p-4">
+                <label class="block text-sm font-medium text-purple-700 mb-1">Gender</label>
+                <select id="gender" class="w-full bg-white border border-purple-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-400">
+                    <option value="male">ชาย</option>
+                    <option value="female">หญิง</option>
+                </select>
+            </div>
         </div>
 
         <!-- Calculate Button -->
         <button id="calculate" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-4 rounded-xl shadow-lg hover:opacity-90 transition-all mb-6">
-            Calculate BMI
+            คำนวณสุขภาพ
         </button>
 
-        <!-- Result Card -->
-        <div id="result" class="bg-pink-50 rounded-xl p-6 hidden">
-            <div class="text-center mb-2">
-                <h3 class="font-bold text-lg text-purple-800">Your BMI: <span id="bmi-value">17.6</span></h3>
-                <p class="text-purple-600" id="bmi-category">Underweight</p>
-            </div>
-            <p class="text-sm text-gray-600 text-center">
-                It is recommended to monitor your diet and visit your healthcare professional for guidance.
-            </p>
-        </div>
+        <!-- Dashboard Result -->
+        <div id="dashboard" class="mt-4"></div>
     </div>
 
     <script type="module" src="app.js"></script>

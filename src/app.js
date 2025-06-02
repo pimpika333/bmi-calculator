@@ -12,8 +12,8 @@ function getInputValues() {
     return {
         weight: parseFloat(document.getElementById("weight").value),
         height: parseFloat(document.getElementById("height").value),
-        // age: parseInt(document.getElementById("age").value),
-        // gender: document.getElementById("gender").value
+        age: parseInt(document.getElementById("age").value),
+        gender: document.getElementById("gender").value
     };
 }
 
@@ -56,9 +56,8 @@ function renderDashboard(data) {
 document.getElementById("calculate").addEventListener("click", function() {
     const { weight, height, age, gender } = getInputValues();
 
-    if (!weight || !height || weight <= 0 || height <= 0) {
-        document.getElementById("dashboard").innerHTML = `<div class="text-red-500 text-center">กรุณากรอกน้ำหนักและส่วนสูงให้ถูกต้อง</div>`;
-        alert('Please enter valid height and weight');
+    if (!weight || !height || weight <= 0 || height <= 0 || !age || age <= 0 || !gender) {
+        document.getElementById("dashboard").innerHTML = `<div class="text-red-500 text-center">กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง</div>`;
         return;
     }
 
