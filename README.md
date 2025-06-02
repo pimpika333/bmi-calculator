@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BMI Calculator
 
 This is a simple BMI (Body Mass Index) calculator built using HTML, CSS, and JavaScript, styled with Tailwind CSS. The application allows users to input their weight and height, calculates their BMI, and displays the result.
@@ -55,3 +56,6 @@ To get started with the BMI calculator, follow these steps:
 ## License
 
 This project is open-source and available under the MIT License.
+=======
+# bmi-calculator
+>>>>>>> 3263ba7fb925a7a6ebc19d9e27cca0278bc4c975
