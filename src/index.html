@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+            min-height: 100vh;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="card w-full max-w-md rounded-3xl p-6 shadow-lg">
+        <!-- Header with Icons -->
+        <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="text-2xl">💪</span>
+            <h1 class="text-2xl font-bold text-purple-600">Teen BMI Calculator</h1>
+            <span class="text-2xl">✨</span>
+        </div>
+        
+        <p class="text-center text-purple-600 mb-6">Check your BMI and stay healthy ❤️</p>
+
+        <!-- Input Form -->
+        <div class="space-y-4 mb-6">
+            <div class="bg-purple-50 rounded-xl p-4">
+                <label class="block text-sm font-medium text-purple-700 mb-1">Height (cm)</label>
+                <input type="number" id="height" class="w-full bg-white border border-purple-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="171">
+            </div>
+
+            <div class="bg-purple-50 rounded-xl p-4">
+                <label class="block text-sm font-medium text-purple-700 mb-1">Weight (kg)</label>
+                <input type="number" id="weight" class="w-full bg-white border border-purple-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="110">
+            </div>
+        </div>
+
+        <!-- Calculate Button -->
+        <button id="calculate" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-4 rounded-xl shadow-lg hover:opacity-90 transition-all mb-6">
+            Calculate BMI
+        </button>
+
+        <!-- Result Card -->
+        <div id="result" class="bg-pink-50 rounded-xl p-6 hidden">
+            <div class="text-center mb-2">
+                <h3 class="font-bold text-lg text-purple-800">Your BMI: <span id="bmi-value">17.6</span></h3>
+                <p class="text-purple-600" id="bmi-category">Underweight</p>
+            </div>
+            <p class="text-sm text-gray-600 text-center">
+                It is recommended to monitor your diet and visit your healthcare professional for guidance.
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

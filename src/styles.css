@@ -1,0 +1,31 @@
+body {
+    @apply bg-gray-100 flex items-center justify-center min-h-screen;
+}
+
+.container {
+    @apply bg-white p-8 rounded-lg shadow-md w-full max-w-md;
+}
+
+h1 {
+    @apply text-2xl font-bold mb-4 text-center;
+}
+
+.input-group {
+    @apply mb-4;
+}
+
+label {
+    @apply block text-gray-700 mb-1;
+}
+
+input {
+    @apply border border-gray-300 p-2 rounded w-full;
+}
+
+button {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition;
+}
+
+.result {
+    @apply mt-4 text-lg text-center;
+}
